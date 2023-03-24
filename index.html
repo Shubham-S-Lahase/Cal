@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grading system  Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Grading system Calculator</h1>
+    <div class="container">
+      <div class="form-container">
+        <form>
+          <div class="input-container">
+            <label for="header"><h3><u>Grading system in js</u></h3></label>
+          </div>
+          <div class="input-container">
+            <label for="subject1">English:</label>
+            <input type="number" id="subject1" min="0" max="100" required>
+          </div>
+          <div class="input-container">
+            <label for="subject2">Maths:</label>
+            <input type="number" id="subject2" min="0" max="100" required>
+          </div>
+          <div class="input-container">
+            <label for="subject3">Physics:</label>
+            <input type="number" id="subject3" min="0" max="100" required>
+          </div>
+          <div class="input-container">
+            <label for="subject4">chemistry:</label>
+            <input type="number" id="subject4" min="0" max="100" required>
+          </div>
+          <div class="input-container">
+            <label for="subject5">computer:</label>
+            <input type="number" id="subject5" min="0" max="100" required>
+          </div>
+          <button type="button" onclick="calculateGrade()">Calculate</button>
+        </form>
+      </div>
+      <div class="result-container">
+        <h2><i><u>Result</u></i></h2>
+        <div class="result-row">
+          <span>Total:</span>
+          <span id="total"></span>
+        </div>
+        <div class="result-row">
+          <span>Average:</span>
+          <span id="average"></span>
+        </div>
+        <div class="result-row">
+          <span>Grade:</span>
+          <span id="grade"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
